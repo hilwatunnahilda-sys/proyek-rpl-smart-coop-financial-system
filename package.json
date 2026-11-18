@@ -1,0 +1,19 @@
+{
+  "name": "smart-coop-stmik-ikmi",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --port 3000 --host",
+    "build": "vite build",
+    "preview": "vite preview",
+    "test": "node --test tests/*.test.js"
+  },
+  "dependencies": {
+    "chart.js": "^4.4.7",
+    "canvas-confetti": "^1.9.4"
+  },
+  "devDependencies": {
+    "vite": "^6.1.0"
+  }
+}

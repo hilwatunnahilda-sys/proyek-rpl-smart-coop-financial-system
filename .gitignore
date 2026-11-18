@@ -1,0 +1,86 @@
+# ==============================================================================
+# Smart Co-op Financial System - Git Ignore Configuration
+# STMIK IKMI Cirebon
+# ==============================================================================
+
+# ------------------------------------------------------------------------------
+# 1. Environment & Sensitive Credentials (STRICTLY FORBIDDEN IN REPOSITORY)
+# ------------------------------------------------------------------------------
+.env
+.env.local
+.env.*.local
+*.env
+*.pem
+*.key
+*.cert
+*.pfx
+
+# Explicitly ensure template file is included
+! .env.example
+
+# ------------------------------------------------------------------------------
+# 2. Local Database State, Mock Storage & Runtime Logs
+# ------------------------------------------------------------------------------
+.dev_db_storage.json
+*.sqlite
+*.sqlite3
+*.db
+*.log
+logs/
+*.log.*
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# ------------------------------------------------------------------------------
+# 3. Dependencies
+# ------------------------------------------------------------------------------
+node_modules/
+jspm_packages/
+.pnp
+.pnp.js
+
+# ------------------------------------------------------------------------------
+# 4. Production Build & Bundler Artifacts
+# ------------------------------------------------------------------------------
+dist/
+dist-ssr/
+build/
+out/
+.vite/
+.cache/
+
+# ------------------------------------------------------------------------------
+# 5. OS & Editor Specific Files
+# ------------------------------------------------------------------------------
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# IDEs & Text Editors
+.idea/
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# ------------------------------------------------------------------------------
+# 6. Test Coverage & AI Agent Scratchpads
+# ------------------------------------------------------------------------------
+coverage/
+.nyc_output/
+.gemini/
+.system_generated/
+scratch/
+tmp/
+temp/
